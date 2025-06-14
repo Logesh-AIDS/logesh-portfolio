@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/final.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Web Developer
+                </p>
+                <h1>Hi, I'm <span>Logesh</span><br>  from Namakkal</h1>
+            </div>
+        </div>
+    </div>
+<!-------------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/aboutme.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a dedicated and passionate undergraduate student pursuing a B.Tech in Artificial Intelligence and Data Science at KIT. Throughout my academic journey, I have consistently embraced opportunities to grow both technically and personally. I actively participate in college-level projects, hackathons, and tech events that challenge my problem-solving and leadership skills. My focus areas include machine learning, data structures, and full-stack web development, and I enjoy applying my classroom knowledge to real-world applications. I have also collaborated with peers on innovative projects, taken part in technical clubs, and contributed to knowledge-sharing sessions, all of which have sharpened my communication and teamwork abilities. With a strong commitment to continuous learning and innovation, I strive to build impactful solutions and contribute meaningfully to the tech community.
+                    </p>
+                    <div class="tab_title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>internship at Learnlogicify</li>
+                            <li><span>2024 - 2025</span><br>Internship at CodeBind</li>
+                            <li><span>2023 - 2024</span><br>College VolleyBall Team Lead</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>College UG</span><br>(2023 - 2027) @Kalaignar Karunanidhi Institute of Technology</li>
+                            <li><span>Higher Secondary</span><br>(2021 - 2023) @Little Angels </li>
+                            <li><span>Secondary Schooling</span><br>(2001-2020) @Little Angels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------services-->
+<dic id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quasi in! Obcaecati nobis dicta quam aperiam adipisci impedit, earum illo nisi reiciendis hic. Praesentium, debitis veniam alias rem quisquam consectetur?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quasi in! Obcaecati nobis dicta quam aperiam adipisci impedit, earum illo nisi reiciendis hic. Praesentium, debitis veniam alias rem quisquam consectetur?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quasi in! Obcaecati nobis dicta quam aperiam adipisci impedit, earum illo nisi reiciendis hic. Praesentium, debitis veniam alias rem quisquam consectetur?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</dic>    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");    
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
+</html>
