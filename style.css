@@ -318,11 +318,11 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(image/mbg1.png);
+        background-image: url(image/finalgt.png);
     }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 150px;
+        font-size: 15px;
     }
     .header-text h1{
         font-size: 16px;
@@ -373,5 +373,8 @@ nav .fa-solid{
     }
     .copyright{
         font-size: 14px;
+    }
+    .services-list{
+        flex-basis: 100%;
     }
 }
